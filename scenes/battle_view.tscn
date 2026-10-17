@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://du5kmgh672qip"]
+
+[ext_resource type="Script" uid="uid://cy4h1ik4w1or8" path="res://scripts/view/battle_view.gd" id="1_21l3i"]
+
+[node name="BattleView" type="Control" unique_id=1463198154]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_21l3i")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1055753776]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HeroLabel" type="Label" parent="VBoxContainer" unique_id=2038304928]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HeroHP" type="ProgressBar" parent="VBoxContainer" unique_id=2036912084]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MonsterLabel" type="Label" parent="VBoxContainer" unique_id=2143043733]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="MonsterHP" type="ProgressBar" parent="VBoxContainer" unique_id=2119896902]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="LogLabel" type="Label" parent="VBoxContainer" unique_id=1233371538]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=661617712]
+layout_mode = 2
+
+[node name="AttackButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1688861552]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Atacar"
+
+[node name="PotionButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1881751290]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Poção"
+
+[node name="RestartButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1525044283]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Reiniciar"
