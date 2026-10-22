@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites id="2026-10-17" name="report_1" tests="40" failures="0" skipped="0" flaky="0" time="0.000">
-	<testsuite id="0" name="battle_state_test" package="test/core" timestamp="2026-10-17T22:39:36" hostname="localhost" tests="9" failures="0" errors="0" skipped="0" flaky="0" time="0.037">
+<testsuites id="2026-10-21" name="report_1" tests="40" failures="0" skipped="0" flaky="0" time="0.000">
+	<testsuite id="0" name="battle_state_test" package="test/core" timestamp="2026-10-21T22:29:03" hostname="localhost" tests="9" failures="0" errors="0" skipped="0" flaky="0" time="0.040">
 		<testcase name="test_ataque_causa_dano_esperado" classname="battle_state_test" time="0.003">
 		</testcase>
 		<testcase name="test_critico_garantido_dobra_o_ataque" classname="battle_state_test" time="0.002">
 		</testcase>
 		<testcase name="test_batalha_comeca_em_andamento" classname="battle_state_test" time="0.002">
 		</testcase>
-		<testcase name="test_vitoria_do_heroi" classname="battle_state_test" time="0.002">
+		<testcase name="test_vitoria_do_heroi" classname="battle_state_test" time="0.003">
 		</testcase>
-		<testcase name="test_derrota_do_heroi" classname="battle_state_test" time="0.003">
+		<testcase name="test_derrota_do_heroi" classname="battle_state_test" time="0.004">
 		</testcase>
 		<testcase name="test_empate_quando_os_dois_morrem" classname="battle_state_test" time="0.002">
 		</testcase>
-		<testcase name="test_batalha_encerrada_nao_aceita_ataques" classname="battle_state_test" time="0.001">
+		<testcase name="test_batalha_encerrada_nao_aceita_ataques" classname="battle_state_test" time="0.002">
 		</testcase>
-		<testcase name="test_combatente_morto_nao_ataca" classname="battle_state_test" time="0.003">
+		<testcase name="test_combatente_morto_nao_ataca" classname="battle_state_test" time="0.002">
 		</testcase>
 		<testcase name="test_evento_battle_ended_emitido_uma_vez_com_o_resultado" classname="battle_state_test" time="0.002">
 		</testcase>
 	</testsuite>
-	<testsuite id="1" name="crit_roller_test" package="test/core" timestamp="2026-10-17T22:39:36" hostname="localhost" tests="6" failures="0" errors="0" skipped="0" flaky="0" time="0.026">
-		<testcase name="test_chance_zero_nunca_critica" classname="crit_roller_test" time="0.003">
+	<testsuite id="1" name="crit_roller_test" package="test/core" timestamp="2026-10-21T22:29:03" hostname="localhost" tests="6" failures="0" errors="0" skipped="0" flaky="0" time="0.028">
+		<testcase name="test_chance_zero_nunca_critica" classname="crit_roller_test" time="0.004">
 		</testcase>
-		<testcase name="test_chance_100_sempre_critica" classname="crit_roller_test" time="0.003">
+		<testcase name="test_chance_100_sempre_critica" classname="crit_roller_test" time="0.002">
 		</testcase>
-		<testcase name="test_rolagem_abaixo_da_chance_e_critico" classname="crit_roller_test" time="0.003">
+		<testcase name="test_rolagem_abaixo_da_chance_e_critico" classname="crit_roller_test" time="0.001">
 		</testcase>
-		<testcase name="test_rolagem_acima_da_chance_nao_e_critico" classname="crit_roller_test" time="0.003">
+		<testcase name="test_rolagem_acima_da_chance_nao_e_critico" classname="crit_roller_test" time="0.002">
 		</testcase>
 		<testcase name="test_chance_acima_de_100_e_limitada" classname="crit_roller_test" time="0.003">
 		</testcase>
 		<testcase name="test_chance_negativa_e_tratada_como_zero" classname="crit_roller_test" time="0.003">
 		</testcase>
 	</testsuite>
-	<testsuite id="2" name="damage_calculator_test" package="test/core" timestamp="2026-10-17T22:39:37" hostname="localhost" tests="6" failures="0" errors="0" skipped="0" flaky="0" time="0.026">
-		<testcase name="test_dano_basico_e_ataque_menos_defesa" classname="damage_calculator_test" time="0.001">
+	<testsuite id="2" name="damage_calculator_test" package="test/core" timestamp="2026-10-21T22:29:03" hostname="localhost" tests="6" failures="0" errors="0" skipped="0" flaky="0" time="0.027">
+		<testcase name="test_dano_basico_e_ataque_menos_defesa" classname="damage_calculator_test" time="0.002">
 		</testcase>
 		<testcase name="test_bonus_soma_ao_ataque" classname="damage_calculator_test" time="0.003">
 		</testcase>
-		<testcase name="test_critico_dobra_o_ataque_bruto" classname="damage_calculator_test" time="0.003">
+		<testcase name="test_critico_dobra_o_ataque_bruto" classname="damage_calculator_test" time="0.002">
 		</testcase>
-		<testcase name="test_dano_nunca_fica_negativo" classname="damage_calculator_test" time="0.003">
+		<testcase name="test_dano_nunca_fica_negativo" classname="damage_calculator_test" time="0.001">
 		</testcase>
-		<testcase name="test_ataque_zero_causa_zero" classname="damage_calculator_test" time="0.002">
+		<testcase name="test_ataque_zero_causa_zero" classname="damage_calculator_test" time="0.003">
 		</testcase>
-		<testcase name="test_ataque_negativo_causa_zero" classname="damage_calculator_test" time="0.002">
+		<testcase name="test_ataque_negativo_causa_zero" classname="damage_calculator_test" time="0.003">
 		</testcase>
 	</testsuite>
-	<testsuite id="3" name="health_test" package="test/core" timestamp="2026-10-17T22:39:37" hostname="localhost" tests="8" failures="0" errors="0" skipped="0" flaky="0" time="0.034">
-		<testcase name="test_dano_reduz_a_vida" classname="health_test" time="0.002">
+	<testsuite id="3" name="health_test" package="test/core" timestamp="2026-10-21T22:29:03" hostname="localhost" tests="8" failures="0" errors="0" skipped="0" flaky="0" time="0.036">
+		<testcase name="test_dano_reduz_a_vida" classname="health_test" time="0.003">
 		</testcase>
 		<testcase name="test_vida_nao_cai_abaixo_de_zero" classname="health_test" time="0.002">
 		</testcase>
-		<testcase name="test_dano_negativo_e_ignorado" classname="health_test" time="0.002">
+		<testcase name="test_dano_negativo_e_ignorado" classname="health_test" time="0.004">
 		</testcase>
-		<testcase name="test_cura_nao_passa_do_maximo" classname="health_test" time="0.002">
+		<testcase name="test_cura_nao_passa_do_maximo" classname="health_test" time="0.003">
 		</testcase>
-		<testcase name="test_cura_negativa_e_ignorada" classname="health_test" time="0.003">
+		<testcase name="test_cura_negativa_e_ignorada" classname="health_test" time="0.002">
 		</testcase>
 		<testcase name="test_morto_nao_pode_ser_curado" classname="health_test" time="0.002">
 		</testcase>
@@ -66,30 +66,30 @@
 		<testcase name="test_sinal_died_e_emitido_uma_unica_vez" classname="health_test" time="0.003">
 		</testcase>
 	</testsuite>
-	<testsuite id="4" name="potion_bag_test" package="test/core" timestamp="2026-10-17T22:39:37" hostname="localhost" tests="6" failures="0" errors="0" skipped="0" flaky="0" time="0.027">
-		<testcase name="test_usar_pocao_cura_e_consome_uma" classname="potion_bag_test" time="0.002">
+	<testsuite id="4" name="potion_bag_test" package="test/core" timestamp="2026-10-21T22:29:03" hostname="localhost" tests="6" failures="0" errors="0" skipped="0" flaky="0" time="0.030">
+		<testcase name="test_usar_pocao_cura_e_consome_uma" classname="potion_bag_test" time="0.003">
 		</testcase>
-		<testcase name="test_sem_pocoes_nao_usa" classname="potion_bag_test" time="0.003">
+		<testcase name="test_sem_pocoes_nao_usa" classname="potion_bag_test" time="0.002">
 		</testcase>
 		<testcase name="test_vida_cheia_nao_consome_pocao" classname="potion_bag_test" time="0.002">
 		</testcase>
-		<testcase name="test_ultima_pocao_zera_o_estoque" classname="potion_bag_test" time="0.002">
+		<testcase name="test_ultima_pocao_zera_o_estoque" classname="potion_bag_test" time="0.004">
 		</testcase>
-		<testcase name="test_cura_da_pocao_respeita_o_maximo" classname="potion_bag_test" time="0.002">
+		<testcase name="test_cura_da_pocao_respeita_o_maximo" classname="potion_bag_test" time="0.003">
 		</testcase>
-		<testcase name="test_quantidade_inicial_negativa_vira_zero" classname="potion_bag_test" time="0.003">
+		<testcase name="test_quantidade_inicial_negativa_vira_zero" classname="potion_bag_test" time="0.004">
 		</testcase>
 	</testsuite>
-	<testsuite id="5" name="turn_order_test" package="test/core" timestamp="2026-10-17T22:39:37" hostname="localhost" tests="5" failures="0" errors="0" skipped="0" flaky="0" time="0.023">
+	<testsuite id="5" name="turn_order_test" package="test/core" timestamp="2026-10-21T22:29:03" hostname="localhost" tests="5" failures="0" errors="0" skipped="0" flaky="0" time="0.025">
 		<testcase name="test_mais_rapido_age_primeiro" classname="turn_order_test" time="0.002">
 		</testcase>
-		<testcase name="test_empate_mantem_a_ordem_original" classname="turn_order_test" time="0.002">
+		<testcase name="test_empate_mantem_a_ordem_original" classname="turn_order_test" time="0.003">
 		</testcase>
-		<testcase name="test_velocidade_zero_age_por_ultimo" classname="turn_order_test" time="0.003">
+		<testcase name="test_velocidade_zero_age_por_ultimo" classname="turn_order_test" time="0.004">
 		</testcase>
 		<testcase name="test_lista_vazia_devolve_lista_vazia" classname="turn_order_test" time="0.002">
 		</testcase>
-		<testcase name="test_nao_altera_a_lista_original" classname="turn_order_test" time="0.002">
+		<testcase name="test_nao_altera_a_lista_original" classname="turn_order_test" time="0.003">
 		</testcase>
 	</testsuite>
 </testsuites>

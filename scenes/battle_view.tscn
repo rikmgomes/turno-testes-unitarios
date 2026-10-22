@@ -11,7 +11,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_21l3i")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1055753776]
+[node name="Background" type="ColorRect" parent="." unique_id=720991283]
+unique_name_in_owner = true
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,40 +20,150 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HeroLabel" type="Label" parent="VBoxContainer" unique_id=2038304928]
+[node name="Floor" type="ColorRect" parent="." unique_id=1209289041]
+unique_name_in_owner = true
+layout_mode = 0
+offset_top = 198.0
+offset_right = 640.0
+offset_bottom = 360.0
+
+[node name="Stage" type="Control" parent="." unique_id=549565291]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="HeroSprite" type="ColorRect" parent="Stage" unique_id=156742122]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 96.0
+offset_top = 118.0
+offset_right = 160.0
+offset_bottom = 198.0
+color = Color(0.9490196, 0.9490196, 0.9490196, 1)
+
+[node name="EyeL" type="ColorRect" parent="Stage/HeroSprite" unique_id=276338656]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 20.0
+offset_right = 22.0
+offset_bottom = 28.0
+color = Color(0, 0, 0, 1)
+
+[node name="EyeR" type="ColorRect" parent="Stage/HeroSprite" unique_id=542136827]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 20.0
+offset_right = 50.0
+offset_bottom = 28.0
+color = Color(0, 0, 0, 1)
+
+[node name="MonsterSprite" type="ColorRect" parent="Stage" unique_id=473857234]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 480.0
+offset_top = 118.0
+offset_right = 544.0
+offset_bottom = 198.0
+color = Color(0.22745098, 0.48235294, 0.8352941, 1)
+
+[node name="EyeL" type="ColorRect" parent="Stage/MonsterSprite" unique_id=316721647]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 20.0
+offset_right = 22.0
+offset_bottom = 28.0
+color = Color(0, 0, 0, 1)
+
+[node name="EyeR" type="ColorRect" parent="Stage/MonsterSprite" unique_id=561870254]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 20.0
+offset_right = 50.0
+offset_bottom = 28.0
+color = Color(0, 0, 0, 1)
+
+[node name="HUD" type="MarginContainer" parent="." unique_id=1783067640]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBox" type="VBoxContainer" parent="HUD" unique_id=210715246]
+layout_mode = 2
+
+[node name="TopRow" type="HBoxContainer" parent="HUD/VBox" unique_id=1788954568]
+layout_mode = 2
+
+[node name="HeroPanel" type="PanelContainer" parent="HUD/VBox/TopRow" unique_id=879646807]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/VBox/TopRow/HeroPanel" unique_id=1398699358]
+layout_mode = 2
+
+[node name="HeroLabel" type="Label" parent="HUD/VBox/TopRow/HeroPanel/VBoxContainer" unique_id=2038304928]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="HeroHP" type="ProgressBar" parent="VBoxContainer" unique_id=2036912084]
+[node name="HeroHP" type="ProgressBar" parent="HUD/VBox/TopRow/HeroPanel/VBoxContainer" unique_id=2036912084]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="MonsterLabel" type="Label" parent="VBoxContainer" unique_id=2143043733]
+[node name="MonsterPanel" type="PanelContainer" parent="HUD/VBox/TopRow" unique_id=2135375695]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HUD/VBox/TopRow/MonsterPanel" unique_id=1454407224]
+layout_mode = 2
+
+[node name="MonsterLabel" type="Label" parent="HUD/VBox/TopRow/MonsterPanel/VBoxContainer" unique_id=2143043733]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="MonsterHP" type="ProgressBar" parent="VBoxContainer" unique_id=2119896902]
+[node name="MonsterHP" type="ProgressBar" parent="HUD/VBox/TopRow/MonsterPanel/VBoxContainer" unique_id=2119896902]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="LogLabel" type="Label" parent="VBoxContainer" unique_id=1233371538]
+[node name="Spacer" type="Control" parent="HUD/VBox" unique_id=1085556639]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LogPanel" type="PanelContainer" parent="HUD/VBox" unique_id=2094310501]
+layout_mode = 2
+
+[node name="LogLabel" type="Label" parent="HUD/VBox/LogPanel" unique_id=1233371538]
 unique_name_in_owner = true
 layout_mode = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=661617712]
+[node name="Buttons" type="HBoxContainer" parent="HUD/VBox" unique_id=661617712]
 layout_mode = 2
+alignment = 1
 
-[node name="AttackButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1688861552]
+[node name="AttackButton" type="Button" parent="HUD/VBox/Buttons" unique_id=1688861552]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 0)
 layout_mode = 2
 text = "Atacar"
 
-[node name="PotionButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1881751290]
+[node name="PotionButton" type="Button" parent="HUD/VBox/Buttons" unique_id=1881751290]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 0)
 layout_mode = 2
 text = "Poção"
 
-[node name="RestartButton" type="Button" parent="VBoxContainer/HBoxContainer" unique_id=1525044283]
+[node name="RestartButton" type="Button" parent="HUD/VBox/Buttons" unique_id=1525044283]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(90, 0)
 layout_mode = 2
 text = "Reiniciar"
